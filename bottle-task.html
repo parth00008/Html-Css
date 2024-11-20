@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phlox | Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0% auto;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            padding: 2%  3%;
+        }
+
+        header .logo {
+            width: 40%;
+        }
+        header .logo img{
+            width: 25%;
+            height: inherit;
+        }
+        header nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        header nav a:hover{
+            color: #FFE4B1;
+        }
+        header .btn {
+            width: 20%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: #FFE4B1;
+            font-size: 18px;
+            border: 1px solid #FFE4B1;
+            padding: 12px 30px;
+            text-transform: uppercase;
+        }
+        .btn a:hover{
+            background-color: #FFE4B1;
+            color: black;
+            transition: all 0.5s linear;
+
+        }
+        .banner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: url(https://demo.phlox.pro/drink-wine/wp-content/uploads/sites/205/2020/07/Group_20-e1593860431555.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5%;
+        }
+
+        .banner .main .lt {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: url(https://demo.phlox.pro/drink-wine/wp-content/uploads/sites/205/2020/08/Group_4.svg);
+            background-repeat: no-repeat;
+            background-size: 95%;
+            background-position: center 30%;
+            /* padding: 20px; */
+            transition: all 1.5s linear;
+        }
+
+        .main .lt h1 {
+            width: fit-content;
+            font-size: 10vh;
+            font-weight: lighter;
+            color: #FFE4B1;
+        }
+
+        .main .lt h1::after {
+            content: '';
+            width: 120px;
+            height: 1px;
+            display: flex;
+            background: #FFE4B1;
+            margin-top: 3%;
+        }
+
+        .lt p {
+            font-size: 20px;
+            color: #999B9C;
+            margin: 40px 0px;
+        }
+
+        .lt a {
+            width: fit-content;
+            text-decoration: none;
+            color: #FFE4B1;
+            border: 1px solid #FFE4B1;
+            padding: 17px 50px;
+            margin-bottom: 23vh;
+        }
+        .lt a:hover{
+            background-color: #FFE4B1;
+            color: black;
+            transition: all 0.5s linear;
+        }
+        .lt .con {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #FFE4B1;
+        }
+
+        .lt .con h2 {
+            color: white;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        .lt .con h2 span {
+            color: #FFE4B1;
+            font-size: 30px;
+        }
+     
+        .main .rt {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: url(https://demo.phlox.pro/drink-wine/wp-content/uploads/sites/205/2020/08/Wine111-Mockups1.png);
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: 87% 97%;
+            /* padding: 20px; */
+            transition: all 2s linear;
+            padding-left: 6%;
+        }
+
+        .main .rt img {
+            width: 90%;
+            height: inherit;
+            transition: all 2s linear;
+        }
+        /* .play{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        } */
+        /* .play .vdo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .play .vdo p{
+            font-size: 30px;
+            color: white;
+            transform: rotate(270deg);
+            letter-spacing: 2px;
+        }
+        .play .vdo h3{
+            font-size: 30px;
+            color: white;
+            transform: rotate(270deg);
+            letter-spacing: 2px;
+        }
+        .play .btn{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .btn i{
+            font-size: 40px;
+        } */
+        /* .btn i::after {
+            content: '';
+            width: 120px;
+            height: 1px;
+            display: flex;
+            transform: rotate(270deg);
+            background: #FFE4B1;
+            margin-top: 3%;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- header start -->
+     <!-- <div class="container"> -->
+    <header>
+        <div class="logo">
+            <img src="https://demo.phlox.pro/drink-wine/wp-content/uploads/sites/205/2020/07/logo.png" alt="">
+        </div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Details</a>
+            <a href="#">Introduce</a>
+            <a href="#">Testimonials</a>
+        </nav>
+        <div class="btn">
+            <a href="#">contact Us</a>
+        </div>
+    </header>
+    <!-- </div> -->
+    <!-- header end -->
+
+    <!-- banner start -->
+    <div class="banner">
+        <div class="container">
+            <div class="main">
+                <div class="lt">
+                    <h1>Find The Right <br> Bottle</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky <br> was a dead black,
+                        and the stars had ceased to twinkle. By the same <br>illusion which lifts the horizon of the
+                        sea.</p>
+                    <a href="#">VIEW FULL DETAIL</a>
+                    <div class="con">
+                        <h2>Year: <span>1996</span></h2>
+                        <h2>Alcohol: <span>12%</span> </h2>
+                        <h2>Sweetness: <span>69%</span> </h2>
+                        <h2>Viscosity: <span>0.89</span></h2>
+                    </div>
+                </div>
+                <div class="rt">
+                    <img src="https://demo.phlox.pro/drink-wine/wp-content/uploads/sites/205/2020/08/Wine111-Mockups2.png" alt="" id="onscr">
+                    <!-- <div class="play">
+                        <div class="vdo">
+                            <p>play</p>
+                            <h3>video</h3>
+                            </div>
+                            <div class="btn">
+                                <i class="fa-solid fa-circle-play" style="color: #FFE4B1;"></i>
+                            </div>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <script>
+
+        window.addEventListener("scroll",function(){
+            if(pageYOffset > 200){
+                document.getElementById("onscr").style.transform = "translateX(25px)";
+            }
+            else{
+                document.getElementById("onscr").style.transform = "translateX(0px)";
+            }
+        })
+        window.addEventListener("scroll",function(){
+            if(pageYOffset > 200){
+                document.querySelector(".rt").style.backgroundPosition = "-30%";
+            }
+            else{
+              document.querySelector(".rt").style.backgroundPosition = "center left";
+            }
+        })
+        window.addEventListener("scroll",function(){
+            if(pageYOffset > 200){
+                document.querySelector(".lt").style.backgroundPosition = "center 25%";
+            }
+            else{
+              document.querySelector(".lt").style.backgroundPosition = "center 30%";
+            }
+        })
+    </script>
+
+</body>
+
+</html>
